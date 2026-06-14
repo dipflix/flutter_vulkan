@@ -1,0 +1,28 @@
+name: vulkan_example
+description: Flutter + Vulkan example — spinning cube rendered with Vulkan, Flutter UI on top.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.11.4
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # dart_vulkan provides Renderer3D, Camera, Mesh, Mat4, Vec3, etc.
+  dart_vulkan:
+    git:
+      url: https://github.com/dipflix/dart_vulkan.git
+      ref: main
+  # flutter_vulkan provides VulkanGameView, FlutterVulkanGame, FlutterVulkanContext.
+  flutter_vulkan:
+    git:
+      url: https://github.com/dipflix/flutter_vulkan.git
+      ref: main
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/shaders/mesh3d.vert.spv
+    - assets/shaders/mesh3d.frag.spv

@@ -1,0 +1,36 @@
+# Dart / Pub
+.dart_tool/
+.packages
+pubspec.lock
+build/
+coverage/
+doc/api/
+
+# Native build products
+lib/native/*.dll
+lib/native/*.dylib
+lib/native/*.so
+lib/native/*.pdb
+
+# Android build
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/.gradle/
+android/.cxx/
+android/local.properties
+**/android/.gradle/
+**/android/local.properties
+**/android/app/src/main/java/io/flutter/plugins/
+
+# Windows Flutter generated
+windows/flutter/ephemeral/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
