@@ -54,6 +54,7 @@ class _VulkanGameViewState extends State<VulkanGameView> {
           _initWindows(w, h);
         } else if (_textureId != null && !_resizing &&
                    (w != _lastW || h != _lastH) && w > 0 && h > 0) {
+          debugPrint('[VulkanGameView] resize: ${_lastW}x$_lastH → ${w}x$h');
           _resizeWindows(w, h);
         }
         if (_textureId == null) return const SizedBox.expand();
